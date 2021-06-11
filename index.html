@@ -143,16 +143,33 @@
 		<section id="contact" class="contact__section">
 			<div class="container">
 				<!-- Contact Header -->
-				<h1>Contact</h1>
+				<h1>Contact Me</h1>
 
 				<!-- Contact Form -->
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdF5qga6z_q7fjXDJyMbPfMfCwbgwiFs_HSROis9WgbNeY98Q/viewform?embedded=true" width="640" height="673" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+				<div class="contact--form">
+					<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdF5qga6z_q7fjXDJyMbPfMfCwbgwiFs_HSROis9WgbNeY98Q/formResponse" method="POST" target="_blank">
+						<div class="form-element">
+							<span>Name</span>
+							<input type="text" name="entry.911719008" placeholder="Name" required />
+						</div>
+
+						<div class="form-element">
+							<span>Email</span>
+							<input type="email" name="entry.1299471270" placeholder="Email" required />
+						</div>
+
+						<div class="form-element">
+							<span>Message</span>
+							<textarea name="entry.1992332467" cols="30" rows="10" required></textarea>
+						</div>
+
+						<button type="submit">Send Message</button>
+					</form>
+				</div>
 			</div>
 		</section>
-		<section class="footer">
-			<div class="container">
-				<a href="#home" class="fas fa-angle-up"></a>
-			</div>
-		</section>
+		<div class="footer__section">
+			<a href="#home" class="fas fa-angle-up"></a>
+		</div>
 	</body>
 </html>
