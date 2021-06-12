@@ -185,18 +185,15 @@ button {
 }
 
 .home__header p {
-	font-size: 18px;
+	font-size: 20px;
 }
 
 /* Social Media Icons CSS */
-.fab {
+.fab,
+.far {
 	font-size: 50px;
 	padding: 30px;
 	color: black;
-}
-
-.fa-facebook:hover {
-	color: #3b5998;
 }
 
 .fa-instagram:hover {
@@ -218,6 +215,10 @@ button {
 	color: #1da1f2;
 }
 
+.fa-discord:hover {
+	color: #7289da;
+}
+
 .fa-youtube:hover {
 	color: #ff0000;
 }
@@ -225,6 +226,10 @@ button {
 @media screen and (max-width: 768px) {
 	.home__header h1 {
 		font-size: 60px;
+	}
+
+	.home__header p {
+		font-size: 16px;
 	}
 
 	.fab {
@@ -400,7 +405,7 @@ img.profile {
 /* Contact Section CSS */
 .contact__section {
 	background-color: #222222;
-	padding: 6rem 0 2rem 0;
+	padding: 6rem 0 3rem 0;
 }
 
 .contact__section h1 {
@@ -470,10 +475,8 @@ textarea {
 
 /* Footer Section CSS */
 .footer__section {
-	padding: 3rem 0 0 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-color: #222222;
+	padding: 0 0 1rem 0;
 }
 
 .fas {
@@ -483,4 +486,21 @@ textarea {
 
 .fas:hover {
 	opacity: 0.7;
+}
+
+hr {
+	color: #7b735b;
+	width: 27%;
+	margin: 10px 0;
+}
+
+.footer__content p,
+a {
+	font-size: 10px;
+	color: #7b735b;
+}
+
+.footer__content a:hover {
+	transition: all 0.3s ease;
+	color: #2f8cff;
 }
