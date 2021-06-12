@@ -195,8 +195,31 @@ button {
 	color: black;
 }
 
-.fab:hover {
-	opacity: 0.7;
+.fa-facebook:hover {
+	color: #3b5998;
+}
+
+.fa-instagram:hover {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.fa-github:hover {
+	opacity: 0.8;
+}
+
+.fa-circle:hover {
+	color: #1b1b1b;
+}
+
+.fa-twitter:hover {
+	color: #1da1f2;
+}
+
+.fa-youtube:hover {
+	color: #ff0000;
 }
 
 @media screen and (max-width: 768px) {
