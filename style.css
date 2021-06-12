@@ -318,7 +318,7 @@ img.profile {
 .projects__card {
 	margin: 10px;
 	height: 450px;
-	width: 350px;
+	width: 300px;
 	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
@@ -371,12 +371,6 @@ img.profile {
 @media screen and (max-width: 768px) {
 	.projects__wrapper {
 		grid-template-columns: 1fr;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	.projects__card {
-		width: 300px;
 	}
 }
 
