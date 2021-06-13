@@ -489,7 +489,7 @@ textarea {
 }
 
 hr {
-	color: #7b735b;
+	color: #808080;
 	width: 27%;
 	margin: 10px 0;
 }
@@ -497,7 +497,7 @@ hr {
 .footer__content p,
 a {
 	font-size: 10px;
-	color: #7b735b;
+	color: #808080;
 }
 
 .footer__content a:hover {

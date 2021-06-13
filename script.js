@@ -17,3 +17,6 @@ const hideMobileMenu = () => {
 }
 
 menuLinks.addEventListener('click', hideMobileMenu);
+
+// Auto Update copyright year
+document.querySelector('#copyright-year').innerText = new Date().getFullYear();
