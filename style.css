@@ -160,7 +160,7 @@ button {
 
 /* Home Section CSS */
 .home__section {
-	background: url('./assets/bg-img-1.jpg') no-repeat center center fixed;
+	background: url(./assets/bg-img-1.webp) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -239,7 +239,7 @@ button {
 
 /* About Section CSS */
 .about__section {
-	background-color: #222222;
+	background-color: #222;
 	padding: 6rem 0;
 }
 
@@ -323,7 +323,7 @@ img.profile {
 
 /* Projects Section CSS */
 .projects__section {
-	background: url('./assets/bg-img-2.jpg') no-repeat fixed;
+	background: url(./assets/bg-img-2.webp) no-repeat fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -404,7 +404,7 @@ img.profile {
 
 /* Contact Section CSS */
 .contact__section {
-	background-color: #222222;
+	background-color: #222;
 	padding: 6rem 0 3rem 0;
 }
 
@@ -434,7 +434,7 @@ form {
 	margin-bottom: 20px;
 }
 
-.form-element span {
+.form-element label {
 	font-size: 18px;
 	margin-bottom: 10px;
 }
@@ -475,7 +475,7 @@ textarea {
 
 /* Footer Section CSS */
 .footer__section {
-	background-color: #222222;
+	background-color: #222;
 	padding: 0 0 1rem 0;
 }
 

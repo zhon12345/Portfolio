@@ -1,5 +1,6 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.nav__links');
+const year = document.querySelector('#copyright-year')
 
 // Display Mobile Menu
 menu.addEventListener('click', () => {
@@ -19,4 +20,4 @@ const hideMobileMenu = () => {
 menuLinks.addEventListener('click', hideMobileMenu);
 
 // Auto Update copyright year
-document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+year.innerText = new Date().getFullYear();
