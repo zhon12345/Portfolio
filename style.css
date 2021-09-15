@@ -13,6 +13,13 @@ html {
 	overflow-x: hidden;
 }
 
+:root {
+	--lead-black: #222;
+	--eerie-black: #1b1b1b;
+	--white: #fff;
+	--box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
 ::-webkit-scrollbar {
 	width: 15px;
 }
@@ -33,8 +40,8 @@ nav .container {
 	display: inline-flex;
 	align-items: center;
 	justify-content: space-around;
-	background: #1b1b1b;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	background: var(--eerie-black);
+	box-shadow: var(--box-shadow);
 	height: 80px;
 	top: 0;
 	position: fixed;
@@ -42,7 +49,7 @@ nav .container {
 }
 
 .nav__logo a {
-	color: #fff;
+	color: var(--white);
 	font-size: 2rem;
 	letter-spacing: 5px;
 	text-transform: uppercase;
@@ -55,7 +62,7 @@ nav .container {
 
 .nav__links a {
 	display: flex;
-	color: #fff;
+	color: var(--white);
 	font-size: 1.2rem;
 	width: 125px;
 	transition: all 0.3s ease;
@@ -90,7 +97,7 @@ nav .container {
 	}
 
 	.nav__links.active {
-		background: #1b1b1b;
+		background: var(--eerie-black);
 		top: 100%;
 		opacity: 1;
 		transition: all 0.5s ease;
@@ -110,7 +117,7 @@ nav .container {
 		height: 3px;
 		margin: 5px auto;
 		transition: all 0.3s ease-in-out;
-		background: #fff;
+		background: var(--white);
 	}
 
 	.nav__links a {
@@ -153,9 +160,10 @@ button {
 	padding: 10px 10px;
 	font-family: 'Montserrat', sans-serif;
 	background: transparent;
-	border: 2px solid #1b1b1b;
+	border: 2px solid var(--eerie-black);
 	cursor: pointer;
 	transition: all 0.3s ease;
+	color: var(--eerie-black);
 }
 
 /* Home Section CSS */
@@ -208,7 +216,7 @@ button {
 }
 
 .fa-circle:hover {
-	color: #1b1b1b;
+	color: var(--eerie-black);
 }
 
 .fa-twitter:hover {
@@ -239,12 +247,12 @@ button {
 
 /* About Section CSS */
 .about__section {
-	background-color: #222;
+	background-color: var(--lead-black);
 	padding: 6rem 0;
 }
 
 .about__section h1 {
-	color: #fff;
+	color: var(--white);
 	margin-bottom: 5rem;
 	font-size: 3rem;
 }
@@ -263,7 +271,7 @@ button {
 }
 
 .about__content {
-	color: #fff;
+	color: var(--white);
 	font-size: 23px;
 	width: 100%;
 }
@@ -280,7 +288,7 @@ button {
 
 img.profile {
 	border-radius: 25%;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-shadow: var(--box-shadow);
 }
 
 @media screen and (max-width: 1100px) {
@@ -351,9 +359,10 @@ img.profile {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	background-color: #fff;
+	background-color: var(--white);
 	transition: all 0.3s ease-in;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-shadow: var(--box-shadow);
+	color: var(--lead-black);
 }
 
 .projects__card img {
@@ -381,13 +390,13 @@ img.profile {
 }
 
 .button--1:hover {
-	box-shadow: inset 9.5em 0 0 0 #1b1b1b;
-	color: #fff;
+	box-shadow: inset 9.5em 0 0 0 var(--eerie-black);
+	color: var(--white);
 }
 
 .button--2:hover {
-	box-shadow: inset -9.5em 0 0 0 #1b1b1b;
-	color: #fff;
+	box-shadow: inset -9.5em 0 0 0 var(--eerie-black);
+	color: var(--white);
 }
 
 @media screen and (max-width: 1300px) {
@@ -404,12 +413,12 @@ img.profile {
 
 /* Contact Section CSS */
 .contact__section {
-	background-color: #222;
+	background-color: var(--lead-black);
 	padding: 6rem 0 3rem 0;
 }
 
 .contact__section h1 {
-	color: #fff;
+	color: var(--white);
 	margin-bottom: 2rem;
 	font-size: 3rem;
 }
@@ -421,11 +430,11 @@ img.profile {
 }
 
 form {
-	background: #fff;
+	background: var(--white);
 	padding: 30px 50px;
 	width: 550px;
 	border-radius: 5%;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-shadow: var(--box-shadow);
 }
 
 .form-element {
@@ -435,6 +444,7 @@ form {
 }
 
 .form-element label {
+	color: var(--eerie-black);
 	font-size: 18px;
 	margin-bottom: 10px;
 }
@@ -449,8 +459,8 @@ textarea {
 }
 
 .contact--form button:hover {
-	background-color: rgb(27, 27, 27);
-	color: #fff;
+	background-color: var(--eerie-black);
+	color: var(--white);
 }
 
 @media screen and (max-width: 610px) {
@@ -475,13 +485,13 @@ textarea {
 
 /* Footer Section CSS */
 .footer__section {
-	background-color: #222;
+	background-color: var(--lead-black);
 	padding: 0 0 1rem 0;
 }
 
 .fas {
 	font-size: 30px;
-	color: #fff;
+	color: var(--white);
 }
 
 .fas:hover {
