@@ -360,7 +360,6 @@ img.profile {
 	flex-direction: column;
 	justify-content: space-evenly;
 	background-color: var(--white);
-	transition: all 0.3s ease-in;
 	box-shadow: var(--box-shadow);
 	color: var(--lead-black);
 }
